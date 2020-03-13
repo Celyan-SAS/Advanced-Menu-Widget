@@ -160,7 +160,7 @@ class AMW_Related_Sub_Items_Walker extends Walker_Nav_Menu {
 		}
 	}
 
-	function walk( $elements, $max_depth ) {
+	function walk( $elements, $max_depth, ...$args ) {
 		$args = array_slice(func_get_args(), 2);
 		$output = '';
 
